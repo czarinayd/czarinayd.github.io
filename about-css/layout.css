@@ -1,0 +1,257 @@
+body { -webkit-animation:fadein 2s; animation:fadein 2s }
+@-webkit-keyframes fadein { from {opacity:0} to {opacity:1} }
+@keyframes fadein { from {opacity:0} to {opacity:1} }
+
+#about{
+  color: white;
+  background-color: #c1200b;
+}
+.grey{
+  width: 100%;
+  height: 130px;
+  background-color: #e7e4e1;
+}
+
+.menuContainer {
+  
+  position: absolute;
+  top: 0;
+  width: 100%;
+ 
+}
+
+.mymenu {
+    width: 1000px;
+    margin:0 auto;
+    font-size: 37px;
+    font-family: 'CANDARA'; 
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    word-spacing: 30px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a.m{
+    padding: 30px 20px 12px 20px;
+}
+
+
+a.m:before {
+  content: "";
+  height: 0px;
+  top: 0px;
+  margin-left: -20px;
+  position: absolute;
+   padding: 25px 20px 30px 20px;
+}
+a.m:hover:before{
+  content: "";
+  height: 30px;
+    transition: all .25s ease-in;
+  position: absolute;
+  margin-left: -20px;
+    background-color: #c1200b;
+   color: white;
+}
+a.home:hover:before{
+  content: "HOME";
+}
+a.about:hover:before{
+  content: "ABOUT";
+}
+a.mmenu:hover:before{
+  content: "MENU";
+}
+a.delivery:hover:before{
+  content: "DELIVERY";
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+    padding: 0;
+    margin-top: -5px;
+}
+
+
+li:last-child { border-right: none; }
+
+
+#logo{
+  width: 360px;
+  height: auto;
+}
+
+
+
+/*Content*/
+
+.content{
+  width: 1000px;
+  margin:0 auto;
+  padding: 25px 50px 25px 50px;
+}
+
+h2{
+  font-family: 'Georgia', serif;
+  color: #c1200b;
+  font-size: 45px;
+}
+
+h3{
+  font-family: 'Georgia', serif;
+  color: #c1200b;
+  font-size: 30px;
+}
+
+.h3{
+  margin-bottom: -30px;
+}
+
+h4{
+  font-family: 'Georgia', serif;
+  color: #c1200b;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+#quotep{
+  color: black;
+}
+
+
+.quotep{
+  margin-top: -20px;
+}
+
+
+.second{
+  margin-left: -50px;
+  margin-bottom:50px;
+  margin-top: 50px
+}
+
+.text1{
+  width:900px;
+  
+}
+
+
+.quote{
+  width: 450px;
+  position: absolute;
+  z-index: 5;
+  margin-top: 30px;
+  margin-left: 430px;
+}
+
+
+.ground{
+  overflow-y: hidden;
+  float:left;
+  height: 400px;
+  margin-bottom: 60px;
+}
+
+
+.staffRow{
+  width: 1000px;
+  overflow: hidden;
+}
+
+.osono, .fukuo, .kiki{
+  float:left;
+  margin: 0px 15px 0px 15px;
+}
+
+.text, .text2, .text3{
+  width: 300px;
+  padding: 5px;
+  font-family: 'Georgia', serif;
+}
+
+
+
+#historyContainer{
+  margin-left: -60px;
+}
+
+.history{
+  width: 800px;
+  font-family: 'Georgia', serif;
+}
+
+.historyText{
+  margin-left:90px;
+}
+/*footer*/
+
+.footerContainer {
+  
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.footer{
+  width: 1000px ;
+  height: 100px;
+  margin: 0 auto;
+  bottom:0;
+  background-color: #c1200b;
+  color: white;
+  font-family: 'CANDARA';
+  font-size: 14px;
+  line-height: 15px;
+  margin-bottom: -100px;
+
+}
+
+
+.location{
+  float: left;
+margin-left: 20px;
+}
+
+.contact{
+  float: left;
+margin-left: 50px;
+}
+
+.stay-connected{
+  float: right;
+  margin-right: 50px;
+}
+
+.media{
+  position: relative;
+  bottom: 20px;
+  right: 8px;
+}
+
+.f{
+  margin: 10px;
+}
+.i{
+  margin: 10px;
+}
+
+#credit{
+  color: white;
+  text-decoration: underline;
+}
+
+#credit:hover{
+  color: black;
+}

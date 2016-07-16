@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html> <!--<![endif]-->
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	
+	<!-- Enable responsive layouts; tell browsers not to shrink pages to fit small screens -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Load styles -->
+	<!-- for production, combine all of these stylesheets -->
+	<link rel="stylesheet" href="css/style.css">
+	
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+	<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> web font from FontsForWeb.com</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="font.css">
+        <style type="text/css">
+		/* when @font-face is defined(it is in font.css) you can add the font to any rule by using font-family */
+		h1 {
+			font-family: 'CANDARA';
+		}
+		</style>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+<script>
+//Array of images which you want to show:
+var images=new Array(
+					'img/JPG/ingredients.jpg',
+       				'img/JPG/bread.jpg',
+                    'img/JPG/box.jpg',
+                    'img/JPG/house.jpg');
+var nextimage=0;
+
+$( document ).ready(function() {
+	 preload(images);
+doSlideshow();
+});
+
+function preload(arrayOfImages) {
+    $(arrayOfImages).each(function(){
+        $('<img/>')[0].src = this;
+    });
+}
+
+function doSlideshow(){
+    if(nextimage>=images.length){nextimage=0;}
+    $('html')
+    .css('background-image','url("'+images[nextimage++]+'")')
+    .fadeIn(500, function(){
+        setTimeout(doSlideshow,5000);
+    });
+}
+</script>
+
+
+</head>
+<body>
+
+
+	<!-- navigation -->
+<div cass="menuContainer">
+	<div class="menu">
+
+		<ul>
+  			<li><a id="home" class="m home" href="index.html">HOME</a></li>
+  			<li><a id="about" class="m about" href="about.html">ABOUT</a></li>
+  			<li><a id="menu" class="m mmenu" href="menu.html">MENU</a></li>
+  			<li><a id="delivery" class="m delivery" href="delivery.html">DELIVERY</a></li>
+		</ul>
+
+	</div><!-- end menu-->
+</div>
+
+
+	<div id="logo">
+		<img src="img/logo1.png" alt="Gutiokipanja Bakery"/>
+	</div>
+
+
+<!-- footer-->
+
+<div class="footerContainer">
+
+	<div class="footer">
+		<div class="location">
+			<p>LOCATION<br/>
+			160 RUE STREET<br/>
+			MIEKO, JAPAN<br/>
+			<p>OPEN DAILY 7AM-7PM</p>
+		</div><!-- location-->
+
+		<div class="contact">
+			<p> CONTACT US <br/>
+			 090 39461847 <br/>
+			INFO@GUTIOKIPANJA.COM</p>
+
+			<a id="credit" href="credit.html">CREDITS</a>
+		</div><!-- contact-->
+
+		<div class="stay-connected">
+			<p> STAY CONNECTED </p>
+			<div class="media">
+				<a href="https://www.facebook.com/gutiokipanja.bakery" target="_blank">
+					<img class="f" src="img/facebook.png" alt="Facebook" onmouseover="this.src='img/facebook32.png'" onmouseout="this.src='img/facebook.png'" />
+				</a>
+	
+				<a href="https://twitter.com/GutiokiBakery" target="_blank">
+					<img class="t" src="img/twitter.png"alt="Twitter" onmouseover="this.src='img/twitter32.png'" onmouseout="this.src='img/twitter.png'" />
+				</a>
+
+				<a href="https://www.instagram.com/gutiokibakery/" target="_blank">
+					<img class="i" src="img/instagram.png" alt="Instagram" onmouseover="this.src='img/instagram32.png'" onmouseout="this.src='img/instagram.png'" />
+				</a>
+			</div>
+		</div> <!-- stay connected-->
+
+	</div> <!-- footer-->
+</div><!-- footerContainer-->
+
+
+
+	
+
+</body>
+</html>

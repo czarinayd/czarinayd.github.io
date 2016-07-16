@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html> <!--<![endif]-->
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	
+	<!-- Enable responsive layouts; tell browsers not to shrink pages to fit small screens -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Load styles -->
+	<!-- for production, combine all of these stylesheets -->
+	<link rel="stylesheet" href="delivery-css/style.css">
+	
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+	<link href='https://fonts.googleapis.com/css?family=Lusitana:400,700|Halant:400,600,300,500,700' rel='stylesheet' type='text/css'>
+
+	<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> web font from FontsForWeb.com</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="font.css">
+        <style type="text/css">
+		/* when @font-face is defined(it is in font.css) you can add the font to any rule by using font-family */
+		h1 {
+			font-family: 'CANDARA';
+		}
+		</style>
+
+
+</head>
+<body>
+<div class="footerContainer">
+
+	<!-- navigation -->
+<div class="grey">	
+	<div class="menuContainer">
+		<div class="mymenu">
+
+			<ul>
+	  			<li><a id="home" class="m home" href="index.html">HOME</a></li>
+	  			<li><a id="about" class="m about" href="about.html">ABOUT</a></li>
+	  			<li><a id="menu" class="m mmenu" href="menu.html">MENU</a></li>
+	  			<li><a id="delivery" class="m delivery" href="delivery.html">DELIVERY</a></li>
+	  			<li><a href="index.html"><img id="logo" src="img/logo2.png" alt="Gutiokipanja Bakery"/></a></li>
+			</ul>
+
+		</div><!-- end menu-->
+	</div>
+</div>	
+
+<!--content-->
+
+<div class="order content">
+	<h2> ORDER FOR DELIVERY</h2>
+<div class="textorder">
+	<em><p> Our unique witch delivery service caters to the greater Mieko area. Delivery fees start at $10. The minimum order for delivery is ONE order of bread, cake, or a dozen cookies, and the maximum order amount is FIVE menu items in total. We request that all delivery orders be placed by 5:00pm the day prior to delivery. For large orders, additional advance notice is appreciated.</p> 
+
+	<p>
+	Additional charges may apply to orders over 30lbs. Payment for delivery is preferred at the door.</p></em>
+</div>
+</div>
+
+<div class="part1">
+	<div class="build content">
+		<h2> BUILD YOUR ORDER </h2> 
+		<form class="quantity">
+			<p class="Q">Quantity</p> 
+			
+			<div class="formLine">
+				<label for="bread">Bread</label>
+				<input type="number" id="bread" name="bread" min="1" max="5"> &nbsp; x $4.00
+	   		</div>
+
+	   		
+
+	   		<div class="formLine">	
+	 		<label for="filled">Filled Bread</label> 
+	 		<input type="number" id="filled" name="filled" min="1" max="5"> &nbsp; x $5.00
+	 		</div>
+	 		
+	 		
+	 		<div class="formLine">
+	 		<label for="cookies">Cookies per dozen</label>
+	  		<input type="number" id="cookies" name="cookies" min="1" max="5"> &nbsp; x $10.00
+	  		</div>
+	  	
+
+	  		<div class="formLine">
+	  		<label for="cake">Cake</label>
+	 		<input type="number" id="cake" name="cake" min="1" max="5"> &nbsp; x $15.00
+	 	</div>
+	 	</form>
+	</div>
+
+
+	 <div class="customize">
+	 	<p>Customize Your Order</p> 
+	 		<form>
+	 		<TEXTAREA NAME="comment" ROWS=6 COLS=40> </TEXTAREA>
+			</form>
+	</div>
+</div> <!-- end part1 -->
+
+
+<div class="part2">
+<div class="info content">
+	<h2> DELIVERY INFORMATION </h2>
+	<form>
+		<label for="name"><span class="ast">*</span>Name</label>
+		<input type="text" id="name" name="name" size="70">
+  		<br><br>
+  		<label for="line1"><span class="ast">*</span>Address Line 1</label>
+  		<input type="text" id="line1" name="line1" size="70">
+  		<br><br>
+  		<label for="line2">Address Line 2</label>
+  		<input type="text" id="line2" name="line2" size="70">
+  		<br><br>
+  		<label for="city"><span class="ast">*</span>City</label>
+  		<input type="text" id="city" name="city" size="70">
+		<br><br><br><br>
+
+	<div class="s">
+		<div class="st">	
+			<label for="state"><span class="ast">*</span>State</label>
+	  		<input type="text" id="state" name="state" size="13">
+	  	</div>
+	  		<br>
+	  	<div class="zip">
+	  		<label for="zipcode"><span class="ast">*</span>Zipcode</label>
+	  		<input type="text" id="zipcode" name="zipcode" size="13">
+	  	</div>
+  	</div>
+  		
+  		<br><br><br>
+  		<label for="number"><span class="ast">*</span>Phone Number</label>
+  		<input type="text" id="number" name="number" size="40">
+  		<br><br>
+
+  		<label for="date"><span class="ast">*</span>Date &amp; Time of Delivery</label>
+  		<input type="datetime-local" id="date" name="bdaytime">
+
+  		<br><br>
+<div class="specialInstructions">
+  		<p>Special Delivery Instructions</p> 
+ 		<TEXTAREA NAME="special" ROWS=6 COLS=40> </TEXTAREA>
+
+  		<p> <em> <span class="ast">*</span>Required Fields</em> </p>
+</div></form>
+
+	<form action="submit.html">
+  	<div class="submit">
+		<input type="submit" value="SUBMIT">
+	</div>
+	</form>
+</div>
+
+</div>
+
+
+
+
+<!-- footer-->
+
+
+	<div class="footer">
+		<div class="location">
+			<p> <span style="font-size: 16px;"> LOCATION </span><br/>
+			160 RUE STREET<br/>
+			MIEKO, JAPAN<br/>
+			<p><span style="font-size: 16px;">OPEN DAILY 7AM-7PM</span></p>
+		</div><!-- location-->
+
+		<div class="contact">
+			<p> <span style="font-size: 16px;">CONTACT US </span><br/>
+			 090 39461847 <br/>
+			INFO@GUTIOKIPANJA.COM</p>
+
+			<a id="credit" href="credit.html">CREDITS</a>
+		</div><!-- contact-->
+
+		<div class="stay-connected">
+			<p> <span style="font-size: 16px;">STAY CONNECTED</span> </p>
+			<div class="media">
+				<a href="https://www.facebook.com/gutiokipanja.bakery" target="_blank">
+					<img class="f" src="img/facebook.png" alt="Facebook" onmouseover="this.src='img/facebook32.png'" onmouseout="this.src='img/facebook.png'" />
+				</a>
+	
+				<a href="https://twitter.com/GutiokiBakery" target="_blank">
+					<img class="t" src="img/twitter.png"alt="Twitter" onmouseover="this.src='img/twitter32.png'" onmouseout="this.src='img/twitter.png'" />
+				</a>
+
+				<a href="https://www.instagram.com/gutiokibakery/" target="_blank">
+					<img class="i" src="img/instagram.png" alt="Instagram" onmouseover="this.src='img/instagram32.png'" onmouseout="this.src='img/instagram.png'" />
+				</a>
+			</div>
+		</div> <!-- stay connected-->
+
+	</div> <!-- footer-->
+</div><!-- footerContainer-->
+
+
+	
+
+</body>
+</html>
